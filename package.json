@@ -5,7 +5,7 @@
   "repository": "https://github.com/nettonucci/NPS-Api-nlw.git",
   "author": "nettonucci <nettonucci@gmail.com>",
   "license": "MIT",
-  "scripts": {"dev": "ts-node-dev src/server.ts"},
+  "scripts": {"dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"},
   "dependencies": {
     "express": "^4.17.1"
   },
