@@ -5,6 +5,12 @@
             "driver": "SQLite",
             "database": "${workspaceFolder:NPS-Api-nlw}/src/database/database.sqlite",
             "name": "NLW04"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "NLW04.Test",
+            "database": "${workspaceFolder:NPS-Api-nlw}/src/database/database.test.sqlite"
         }
     ],
     "sqltools.useNodeRuntime": true
