@@ -15,6 +15,17 @@ it('should be able to create a new survey', async () => {
         description: 'Description Example'
     })
     expect(response.status).toBe(201)
+    expect(response.body).toHaveProperty('id')
+})
+it('should be able to get all survey', async () => {
+    await request(app).post('/surveys')
+    .send({
+        title: "Title2 Example",
+        description: 'Description Example'
+    })
+
+    const response = await request(app).get('/surveys')
+    expect(response.body.length).toBe(2)
 })
 
 
